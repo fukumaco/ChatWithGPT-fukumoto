@@ -13,6 +13,10 @@
 		6A714BDB2AABECE40055A0A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A714BD92AABECE40055A0A7 /* Main.storyboard */; };
 		6A714BDD2AABECE60055A0A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A714BDC2AABECE60055A0A7 /* Assets.xcassets */; };
 		6A714BE02AABECE60055A0A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A714BDE2AABECE60055A0A7 /* LaunchScreen.storyboard */; };
+		6A714BE92AABEDC30055A0A7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 6A714BE82AABEDC30055A0A7 /* Alamofire */; };
+		6A714BEC2AABEE380055A0A7 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6A714BEB2AABEE380055A0A7 /* RealmSwift */; };
+		6A714BEF2AABEE720055A0A7 /* ProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 6A714BEE2AABEE720055A0A7 /* ProgressHUD */; };
+		6A714BF12AABF06D0055A0A7 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 6A714BF02AABF06D0055A0A7 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,7 @@
 		6A714BDC2AABECE60055A0A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A714BDF2AABECE60055A0A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A714BE12AABECE60055A0A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A714BF02AABF06D0055A0A7 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +36,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A714BEF2AABEE720055A0A7 /* ProgressHUD in Frameworks */,
+				6A714BEC2AABEE380055A0A7 /* RealmSwift in Frameworks */,
+				6A714BE92AABEDC30055A0A7 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +71,7 @@
 				6A714BDC2AABECE60055A0A7 /* Assets.xcassets */,
 				6A714BDE2AABECE60055A0A7 /* LaunchScreen.storyboard */,
 				6A714BE12AABECE60055A0A7 /* Info.plist */,
+				6A714BF02AABF06D0055A0A7 /* .gitignore */,
 			);
 			path = ChatWithGPT;
 			sourceTree = "<group>";
@@ -83,6 +92,11 @@
 			dependencies = (
 			);
 			name = ChatWithGPT;
+			packageProductDependencies = (
+				6A714BE82AABEDC30055A0A7 /* Alamofire */,
+				6A714BEB2AABEE380055A0A7 /* RealmSwift */,
+				6A714BEE2AABEE720055A0A7 /* ProgressHUD */,
+			);
 			productName = ChatWithGPT;
 			productReference = 6A714BD02AABECE40055A0A7 /* ChatWithGPT.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,11 @@
 				Base,
 			);
 			mainGroup = 6A714BC72AABECE40055A0A7;
+			packageReferences = (
+				6A714BE72AABEDC30055A0A7 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				6A714BEA2AABEE380055A0A7 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				6A714BED2AABEE720055A0A7 /* XCRemoteSwiftPackageReference "ProgressHUD" */,
+			);
 			productRefGroup = 6A714BD12AABECE40055A0A7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,6 +144,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A714BF12AABF06D0055A0A7 /* .gitignore in Resources */,
 				6A714BE02AABECE60055A0A7 /* LaunchScreen.storyboard in Resources */,
 				6A714BDD2AABECE60055A0A7 /* Assets.xcassets in Resources */,
 				6A714BDB2AABECE40055A0A7 /* Main.storyboard in Resources */,
@@ -358,6 +378,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6A714BE72AABEDC30055A0A7 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		6A714BEA2AABEE380055A0A7 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		6A714BED2AABEE720055A0A7 /* XCRemoteSwiftPackageReference "ProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/relatedcode/ProgressHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 13.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6A714BE82AABEDC30055A0A7 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6A714BE72AABEDC30055A0A7 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		6A714BEB2AABEE380055A0A7 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6A714BEA2AABEE380055A0A7 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		6A714BEE2AABEE720055A0A7 /* ProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6A714BED2AABEE720055A0A7 /* XCRemoteSwiftPackageReference "ProgressHUD" */;
+			productName = ProgressHUD;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6A714BC82AABECE40055A0A7 /* Project object */;
 }
